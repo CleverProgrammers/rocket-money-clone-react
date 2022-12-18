@@ -1,0 +1,61 @@
+form {
+  /* Add some padding and a background color to the form */
+  padding: 20px;
+  background-color: #fff;
+
+  /* Use flexbox to align the form fields horizontally */
+  display: flex;
+
+  flex-direction: column;
+
+  border-radius: 10px;
+  box-shadow: 5px 2px 4px -1px rgba(145, 143, 143, 0.12);
+  -webkit-box-shadow: 5px 2px 4px -1px rgba(145, 143, 143, 0.12);
+  -moz-box-shadow: 5px 2px 4px -1px rgba(145, 143, 143, 0.12);
+}
+
+/* Style the labels and input fields */
+label,
+input {
+  /* Add some margin to the bottom of each element */
+  margin-bottom: 10px;
+}
+
+label {
+  /* Make the labels bold and a bit larger */
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+input {
+  /* Add some padding and a border to the input fields */
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+/* Style the select element (dropdown menu) */
+select {
+  /* Add some padding and a border to the select element */
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+button[type='submit'] {
+  /* Add some padding and a background color to the submit button */
+  padding: 8px 16px;
+  background-color: rgb(142, 0, 0);
+  border-radius: 10px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  /* Make the submit button a bit larger and give it a white text color */
+  font-size: 1.2em;
+  color: white;
+
+  /* Add a hover effect to the submit button */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

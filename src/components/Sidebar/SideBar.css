@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  flex-direction: column;
+  box-shadow: 5px 2px 4px -1px rgba(145, 143, 143, 0.12);
+  -webkit-box-shadow: 5px 2px 4px -1px rgba(145, 143, 143, 0.12);
+  -moz-box-shadow: 5px 2px 4px -1px rgba(145, 143, 143, 0.12);
+}
+
+.logo {
+  width: 75%;
+  object-fit: contain;
+  height: 100%;
+}
+
+.logoContainer {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}

@@ -1,0 +1,37 @@
+.profielWrapper {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-weight: 200;
+  font-size: 13px;
+}
+
+.greetings {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.right {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.notifIcon {
+  font-size: 23px;
+  color: rgb(185, 185, 185);
+  cursor: pointer;
+}
+
+.settingsIcon {
+  font-size: 23px;
+  color: rgb(185, 185, 185);
+  cursor: pointer;
+}
