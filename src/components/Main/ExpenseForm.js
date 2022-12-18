@@ -1,15 +1,29 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './ExpenseForm.css'
-function ExpenseForm() {
+
+const ExpenseForm = ({ transactions, setTransactions }) => {
   // Use the useState hook to create state variables for the form inputs
   const [description, setDescription] = useState('')
   const [category, setCategory] = useState('')
-  const [amount, setAmount] = useState(0)
+  const [amount, setAmount] = useState('')
 
   // Create a function to handle form submission
   const handleSubmit = event => {
     event.preventDefault()
     // TODO: Submit the form data to your backend or perform some other action
+  }
+
+  const addTxToList = () => {
+    console.log({
+      name: description,
+      category: category,
+      cost: parseInt(amount),
+    })
+
+    setTransactions([
+      ...transactions,
+      { name: description, category: category, cost: parseInt(amount) },
+    ])
   }
 
   return (
@@ -47,7 +61,9 @@ function ExpenseForm() {
       />
 
       {/* Add a submit button to submit the form */}
-      <button type='submit'>Submit</button>
+      <button type='submit' onClick={addTxToList}>
+        Submit
+      </button>
     </form>
   )
 }

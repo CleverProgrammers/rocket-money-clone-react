@@ -1,4 +1,3 @@
-import React from 'react'
 import './SideBar.css'
 import logo from '../../assets/logo.png'
 import Profile from './Profile'

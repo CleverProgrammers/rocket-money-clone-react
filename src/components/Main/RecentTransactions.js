@@ -1,7 +1,8 @@
-import React from 'react'
 import './RecentTransactions.css'
 
-const RecentTransactions = () => {
+const RecentTransactions = ({ transactions }) => {
+  console.log(transactions)
+
   return (
     <table>
       <tr>
@@ -9,21 +10,13 @@ const RecentTransactions = () => {
         <th>Category</th>
         <th>Amount</th>
       </tr>
-      <tr>
-        <td>Grocery Shopping</td>
-        <td>🍲Food</td>
-        <td>$50.00</td>
-      </tr>
-      <tr>
-        <td>Gas for car</td>
-        <td>🚗Transportation</td>
-        <td>$30.00</td>
-      </tr>
-      <tr>
-        <td>Dinner at restaurant</td>
-        <td>🍲Food</td>
-        <td>$75.00</td>
-      </tr>
+      {transactions.map(tx => (
+        <tr>
+          <td>{tx.name}</td>
+          <td>{tx.category}</td>
+          <td>${tx.cost.toFixed(2)}</td>
+        </tr>
+      ))}
     </table>
   )
 }
