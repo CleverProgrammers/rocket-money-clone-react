@@ -21,6 +21,18 @@ table {
   /* Add box shadow to the table for different browsers */
   -webkit-box-shadow: 4px 1px 5px 0px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 4px 1px 5px 0px rgba(0, 0, 0, 0.16);
+
+  /* Adjust the font */
+  size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+/* Style for the table header */
+thead {
+  /* Set the background color to a light gray */
+  background-color: #f2f2f2;
+
+  /* Set the font weight to 600 */
+  font-weight: 600;
 }
 
 /* Style for the table cells */
@@ -33,15 +45,6 @@ td {
 
   /* Add 8px padding to the cells */
   padding: 8px;
-}
-
-/* Style for the table header */
-thead {
-  /* Set the background color to a light gray */
-  background-color: #f2f2f2;
-
-  /* Set the font weight to 600 */
-  font-weight: 600;
 }
 
 /* Style for the recent transactions container */
