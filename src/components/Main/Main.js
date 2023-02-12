@@ -11,21 +11,21 @@ const Main = () => {
   return (
     /* Main container */
     <div className='mainWrapper'>
-      /* Header for the main screen */
+      {/* Header for the main screen */}
       <div className='mainHeader'>Good morning, Kevin ☀️</div>
-      /* Expense form component */
+      {/* Expense form component */}
       <ExpenseForm
         transactions={transactions}
         setTransactions={setTransactions}
       />
-      /* Container for the recent transactions */
+      {/* Container for the recent transactions */}
       <div className='transactions'>
         {/* Check if there are any transactions */}
         {transactions.length ? (
           <>
-            /* Header for the recent transactions */
+            {/* Header for the recent transactions */}
             <div className='transactionsHeader'>Recent Transactions</div>
-            /* Component for the recent transactions */
+            {/* Component for the recent transactions */}
             <RecentTransactions transactions={transactions} />
           </>
         ) : (
