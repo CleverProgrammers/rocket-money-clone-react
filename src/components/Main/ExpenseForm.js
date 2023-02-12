@@ -46,10 +46,10 @@ const ExpenseForm = ({ transactions, setTransactions }) => {
       >
         {/* Add options for the different categories */}
         <option value=''>Select a category</option>
-        <option value='transportation'>🚗Transportation</option>
-        <option value='bills'>💰Bills</option>
-        <option value='food'>🍲Food</option>
-        <option value='entertainment'>🎭Entertainment</option>
+        <option value='Transportation 🚗'>🚗Transportation</option>
+        <option value='Bills 💰'>💰Bills</option>
+        <option value='Food 🍜'>🍲Food</option>
+        <option value='Entertainment 🎭'>🎭Entertainment</option>
       </select>
 
       <label htmlFor='amount'>Amount:</label>
