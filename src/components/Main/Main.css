@@ -27,3 +27,9 @@
 .transactions {
   margin-top: 40px;
 }
+
+.noTransactions {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #a0a0a0;
+}

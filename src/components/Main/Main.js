@@ -15,8 +15,14 @@ const Main = () => {
       />
 
       <div className='transactions'>
-        <div className='transactionsHeader'>Recent Transactions</div>
-        <RecentTransactions transactions={transactions} />
+        {transactions.length ? (
+          <>
+            <div className='transactionsHeader'>Recent Transactions</div>
+            <RecentTransactions transactions={transactions} />
+          </>
+        ) : (
+          <div className='noTransactions'>No transactions yet</div>
+        )}
       </div>
     </div>
   )
