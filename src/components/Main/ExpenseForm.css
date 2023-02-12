@@ -2,7 +2,7 @@ form {
   /* Add some padding and a background color to the form */
   padding: 20px;
   background-color: #fff;
-
+  width: 40%;
   /* Use flexbox to align the form fields horizontally */
   display: flex;
 
