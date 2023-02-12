@@ -9,7 +9,9 @@ const ExpenseForm = ({ transactions, setTransactions }) => {
   const [amount, setAmount] = useState('')
 
   /* Function to add a transaction to the list */
-  const addTxToList = () => {
+  const addTxToList = e => {
+    /* Prevent the form from submitting */
+    e.preventDefault()
     /* Log the transaction data to the console */
     console.log({
       name: description,
@@ -25,7 +27,7 @@ const ExpenseForm = ({ transactions, setTransactions }) => {
   }
 
   return (
-    <form onSubmit={event => event.preventDefault()}>
+    <form onSubmit={addTxToList}>
       {/* Label for the description input field  */}
       <label htmlFor='description'>Description:</label>
       {/* Input field for the description */}
@@ -64,9 +66,7 @@ const ExpenseForm = ({ transactions, setTransactions }) => {
         onChange={event => setAmount(event.target.value)}
       />
       {/* Submit button */}
-      <button type='submit' onClick={addTxToList}>
-        Submit
-      </button>
+      <button type='submit'>Submit</button>
     </form>
   )
 }
