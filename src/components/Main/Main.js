@@ -5,33 +5,21 @@ import RecentTransactions from './RecentTransactions'
 
 /* Component for the main screen */
 const Main = () => {
-  /* State variable to store the transactions */
-  const [transactions, setTransactions] = useState([])
+  /* ⭐ Make a State variable to store the transactions */
 
   return (
     /* Main container */
     <div className='mainWrapper'>
       {/* Header for the main screen */}
+      {/* ⭐ Change the name to your name */}
       <div className='mainHeader'>Good morning, Kevin ☀️</div>
       {/* Expense form component */}
-      <ExpenseForm
-        transactions={transactions}
-        setTransactions={setTransactions}
-      />
+      {/* ⭐ Pass the transactions and setTransactions as props */}
+      <ExpenseForm />
       {/* Container for the recent transactions */}
       <div className='transactions'>
-        {/* Check if there are any transactions */}
-        {transactions.length ? (
-          <>
-            {/* Header for the recent transactions */}
-            <div className='transactionsHeader'>Recent Transactions</div>
-            {/* Component for the recent transactions */}
-            <RecentTransactions transactions={transactions} />
-          </>
-        ) : (
-          /* Message if there are no transactions */
-          <div className='noTransactions'>No transactions yet</div>
-        )}
+        {/* ⭐ Check if there are any transactions and render RecentTransactions Component if they exist
+        and 'No Transactions Yet' if they dont exist */}
       </div>
     </div>
   )

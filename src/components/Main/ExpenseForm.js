@@ -2,48 +2,34 @@ import React, { useState } from 'react'
 import './ExpenseForm.css'
 
 /* Component for the expense form */
-const ExpenseForm = ({ transactions, setTransactions }) => {
-  /* State variables to store the form data */
-  const [description, setDescription] = useState('')
-  const [category, setCategory] = useState('')
-  const [amount, setAmount] = useState('')
+// ⭐ Pass the transactions and setTransactions as props
+const ExpenseForm = () => {
+  // ⭐ State variables to store the form data */
 
-  /* Function to add a transaction to the list */
-  const addTxToList = () => {
-    /* Log the transaction data to the console */
-    console.log({
-      name: description,
-      category: category,
-      cost: parseInt(amount),
-    })
-
-    /* Add the transaction to the list */
-    setTransactions([
-      ...transactions,
-      { name: description, category: category, cost: parseInt(amount) },
-    ])
-  }
+  // ⭐ Function to add a transaction to the list
+  // ⭐ Make sure to update the transactions state variable
+  // ⭐ Make sure to reset the form data after adding a transaction
 
   return (
-    <form onSubmit={event => event.preventDefault()}>
+    <form onSubmit={() => console.log('form submitted')}>
       {/* Label for the description input field  */}
       <label htmlFor='description'>Description:</label>
       {/* Input field for the description */}
       <input
         type='text'
         id='description'
-        value={description}
-        //Update the description state variable on change
-        onChange={event => setDescription(event.target.value)}
+        // ⭐ Update the description value
+        value={''}
+        // ⭐ Update the description state variable on change
       />
       {/* Label for the category select field */}
       <label htmlFor='category'>Category:</label>
       {/* Select field for the category */}
       <select
         id='category'
-        value={category}
-        /* Update the category state variable on change */
-        onChange={event => setCategory(event.target.value)}
+        // ⭐ Update the category value
+        value={'category'}
+        /* ⭐ Update the category state variable on change */
       >
         {/* Placeholder option for the select field */}
         <option value=''>Select a category</option>
@@ -59,14 +45,12 @@ const ExpenseForm = ({ transactions, setTransactions }) => {
       <input
         type='number'
         id='amount'
-        value={amount}
-        /* Update the amount state variable on change */
-        onChange={event => setAmount(event.target.value)}
+        // ⭐ Update the amount value
+        value={0}
+        // ⭐ Update the amount state variable on change
       />
       {/* Submit button */}
-      <button type='submit' onClick={addTxToList}>
-        Submit
-      </button>
+      <button type='submit'>Submit</button>
     </form>
   )
 }

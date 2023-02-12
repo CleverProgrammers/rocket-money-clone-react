@@ -2,10 +2,8 @@ import React from 'react'
 import './RecentTransactions.css'
 
 /* Component for the recent transactions */
-// Pass the transactions as a prop
+// ⭐ Pass the transactions as a prop
 const RecentTransactions = () => {
-  /* Log the transactions to the console */
-
   return (
     /* Container for the recent transactions */
     <div className='recentTransactions'>
@@ -20,7 +18,9 @@ const RecentTransactions = () => {
           </tr>
         </thead>
         {/* Table body for the transaction data */}
-        <tbody>{/* Map through the transactions and display each one */}</tbody>
+        <tbody>
+          {/* ⭐ Map through the transactions and display each one */}
+        </tbody>
       </table>
     </div>
   )
