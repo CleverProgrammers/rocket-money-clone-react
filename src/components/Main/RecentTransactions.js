@@ -2,9 +2,9 @@ import React from 'react'
 import './RecentTransactions.css'
 
 /* Component for the recent transactions */
-const RecentTransactions = ({ transactions }) => {
+// Pass the transactions as a prop
+const RecentTransactions = () => {
   /* Log the transactions to the console */
-  console.log(transactions)
 
   return (
     /* Container for the recent transactions */
@@ -20,16 +20,7 @@ const RecentTransactions = ({ transactions }) => {
           </tr>
         </thead>
         {/* Table body for the transaction data */}
-        <tbody>
-          {/* Map through the transactions and display each one */}
-          {transactions.map((tx, index) => (
-            <tr key={index}>
-              <td>{tx.name}</td>
-              <td>{tx.category}</td>
-              <td>${tx.cost.toFixed(2)}</td>
-            </tr>
-          ))}
-        </tbody>
+        <tbody>{/* Map through the transactions and display each one */}</tbody>
       </table>
     </div>
   )
