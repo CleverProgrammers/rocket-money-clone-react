@@ -9,9 +9,9 @@ const RecentTransactions = ({ transactions }) => {
   return (
     /* Container for the recent transactions */
     <div className='recentTransactions'>
-      /* Table for the recent transactions */
+      {/* Table for the recent transactions */}
       <table>
-        /* Table head for the description, category, and amount */
+        {/* Table head for the description, category, and amount */}
         <thead>
           <tr>
             <td>Description</td>
@@ -19,7 +19,7 @@ const RecentTransactions = ({ transactions }) => {
             <td>Amount</td>
           </tr>
         </thead>
-        /* Table body for the transaction data */
+        {/* Table body for the transaction data */}
         <tbody>
           {/* Map through the transactions and display each one */}
           {transactions.map((tx, index) => (

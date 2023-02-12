@@ -25,37 +25,37 @@ const ExpenseForm = ({ transactions, setTransactions }) => {
   }
 
   return (
-    <form>
-      /* Label for the description input field */
+    <form onSubmit={event => event.preventDefault()}>
+      {/* Label for the description input field  */}
       <label htmlFor='description'>Description:</label>
-      /* Input field for the description */
+      {/* Input field for the description */}
       <input
         type='text'
         id='description'
         value={description}
-        /* Update the description state variable on change */
+        //Update the description state variable on change
         onChange={event => setDescription(event.target.value)}
       />
-      /* Label for the category select field */
+      {/* Label for the category select field */}
       <label htmlFor='category'>Category:</label>
-      /* Select field for the category */
+      {/* Select field for the category */}
       <select
         id='category'
         value={category}
         /* Update the category state variable on change */
         onChange={event => setCategory(event.target.value)}
       >
-        /* Placeholder option for the select field */
+        {/* Placeholder option for the select field */}
         <option value=''>Select a category</option>
-        /* Options for the category */
+        {/* Options for the category */}
         <option value='Transportation 🚗'>🚗Transportation</option>
         <option value='Bills 💰'>💰Bills</option>
         <option value='Food 🍜'>🍲Food</option>
         <option value='Entertainment 🎭'>🎭Entertainment</option>
       </select>
-      /* Label for the amount input field */
+      {/* Label for the amount input field */}
       <label htmlFor='amount'>Amount:</label>
-      /* Input field for the amount */
+      {/* Input field for the amount */}{' '}
       <input
         type='number'
         id='amount'
@@ -63,7 +63,7 @@ const ExpenseForm = ({ transactions, setTransactions }) => {
         /* Update the amount state variable on change */
         onChange={event => setAmount(event.target.value)}
       />
-      /* Submit button */
+      {/* Submit button */}
       <button type='submit' onClick={addTxToList}>
         Submit
       </button>
