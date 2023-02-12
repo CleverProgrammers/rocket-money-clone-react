@@ -1,46 +1,98 @@
+/* Style for the form container */
 form {
+  /* Add 20px padding to all sides of the form */
   padding: 20px;
+
+  /* Set the background color to white */
   background-color: #fff;
+
+  /* Set the width of the form to 40% */
   width: 40%;
+
+  /* Use flexbox to arrange child elements vertically */
   display: flex;
   flex-direction: column;
+
+  /* Add rounded corners to the form */
   border-radius: 10px;
+
+  /* Add a box shadow to the form */
   box-shadow: 5px 2px 4px -1px rgba(145, 143, 143, 0.12);
+
+  /* Add box shadow to the form for different browsers */
   -webkit-box-shadow: 5px 2px 4px -1px rgba(145, 143, 143, 0.12);
   -moz-box-shadow: 5px 2px 4px -1px rgba(145, 143, 143, 0.12);
 }
 
+/* Style for the label and input elements */
 label,
 input {
+  /* Add a margin of 10px at the bottom of the element */
   margin-bottom: 10px;
 }
 
+/* Style for the label element */
 label {
+  /* Set the font weight to bold */
   font-weight: bold;
+
+  /* Set the font size to 1rem */
   font-size: 1rem;
 }
 
+/* Style for the input element */
 input {
+  /* Add 8px padding to the element */
   padding: 8px;
+
+  /* Add a 1px solid border to the element */
   border: 1px solid #cccccc;
+
+  /* Add rounded corners to the element */
   border-radius: 4px;
 }
 
+/* Style for the select element */
 select {
+  /* Add 8px padding to the element */
   padding: 8px;
+
+  /* Add a 1px solid border to the element */
   border: 1px solid #cccccc;
+
+  /* Add rounded corners to the element */
   border-radius: 4px;
 }
 
+/* Style for the submit button */
 button[type='submit'] {
+  /* Add 8px padding to the top and bottom and 16px padding to the sides */
   padding: 8px 16px;
+
+  /* Set the background color to a dark red */
   background-color: rgb(142, 0, 0);
+
+  /* Add rounded corners to the button */
   border-radius: 10px;
+
+  /* Add a margin of 10px at the top */
   margin-top: 10px;
+
+  /* Remove the default outline */
   outline: none;
+
+  /* Remove the border */
   border: none;
+
+  /* Set the font size to 1.2em */
   font-size: 1.2em;
+
+  /* Set the text color to white */
   color: white;
+
+  /* Change the cursor style to a pointer */
   cursor: pointer;
+
+  /* Add a transition effect to the background color */
   transition: background-color 0.3s;
 }

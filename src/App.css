@@ -1,12 +1,25 @@
+/* Style for the HTML and body elements */
 html,
 body {
+  /* Set the margin and padding to 0 */
   margin: 0;
   padding: 0;
+
+  /* Set the font family to sans-serif */
   font-family: sans-serif;
+
+  /* Set the background color to a light gray */
   background-color: #fbfbfb;
 }
+
+/* Style for the main App container */
 .App {
+  /* Set the height of the container to 100% of the viewport height */
   height: 100vh;
+
+  /* Set the width of the container to 100% */
   width: 100%;
+
+  /* Use flexbox to arrange child elements */
   display: flex;
 }

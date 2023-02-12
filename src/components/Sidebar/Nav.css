@@ -1,33 +1,75 @@
+/* Style for the navigation wrapper container */
 .navWrapper {
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Set the width and height of the container to 100% */
   width: 100%;
   height: 100%;
+
+  /* Add 1rem padding to the container */
   padding: 1rem;
+
+  /* Arrange child elements in a column */
   flex-direction: column;
+
+  /* Add a gap of 30px between child elements */
   gap: 30px;
 }
 
+/* Style for the navigation item */
 .navItem {
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Add a gap of 10px between child elements */
   gap: 10px;
+
+  /* Set the font size to 15px */
   font-size: 15px;
+
+  /* Set the font weight to 600 */
   font-weight: 600;
+
+  /* Center the child elements vertically */
   align-items: center;
+
+  /* Set the width of the item to 100% */
   width: 100%;
+
+  /* Change the cursor style to a pointer */
   cursor: pointer;
 }
 
+/* Style for the navigation item icon */
 .navIcon {
+  /* Set the font size to 25px */
   font-size: 25px;
 }
 
+/* Style for the active navigation item */
 .activeNavItem {
+  /* Set the text color to a dark red */
   color: rgb(142, 0, 0);
+
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Add a gap of 10px between child elements */
   gap: 10px;
+
+  /* Set the font size to 15px */
   font-size: 15px;
+
+  /* Set the font weight to 600 */
   font-weight: 600;
+
+  /* Center the child elements vertically */
   align-items: center;
+
+  /* Set the width of the item to 100% */
   width: 100%;
+
+  /* Change the cursor style to a pointer */
   cursor: pointer;
 }

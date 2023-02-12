@@ -1,39 +1,87 @@
+/* Style for the main wrapper container */
 .mainWrapper {
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Arrange child elements in a column */
   flex-direction: column;
+
+  /* Center the child elements horizontally */
   align-items: center;
+
+  /* Set the width of the container to 100% */
   width: 100%;
+
+  /* Set the background color to a light gray */
   background-color: #fbfbfb;
+
+  /* Add padding to the container */
   padding: 5rem 0 0 4rem;
+
+  /* Add a gap of 30px between child elements */
   gap: 30px;
 }
 
+/* Style for the main header */
 .mainHeader {
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Arrange child elements in a row */
   flex-direction: row;
+
+  /* Center the child elements horizontally and vertically */
   justify-content: center;
   align-items: center;
+
+  /* Set the width of the header to 100% */
   width: 100%;
+
+  /* Set the height of the header to 50px */
   height: 50px;
+
+  /* Set the font weight to 600 */
   font-weight: 600;
+
+  /* Set the font size to 1.8rem */
   font-size: 1.8rem;
 }
 
+/* Style for the transactions header */
 .transactionsHeader {
+  /* Set the font weight to 600 */
   font-weight: 600;
+
+  /* Set the font size to 1.8rem */
   font-size: 1.8rem;
 }
 
+/* Style for the transactions container */
 .transactions {
+  /* Add a margin of 40px at the top */
   margin-top: 40px;
+
+  /* Set the width of the container to 100% */
   width: 100%;
+
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Arrange child elements in a column */
   flex-direction: column;
+
+  /* Center the child elements horizontally */
   align-items: center;
 }
 
+/* Style for the "no transactions" message */
 .noTransactions {
+  /* Set the font weight to 600 */
   font-weight: 600;
+
+  /* Set the font size to 1.2rem */
   font-size: 1.2rem;
+
+  /* Set the text color to a light gray */
   color: #a0a0a0;
 }

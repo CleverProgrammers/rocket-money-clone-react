@@ -1,37 +1,77 @@
+/* Style for the profile wrapper container */
 .profileWrapper {
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Center the child elements vertically */
   align-items: center;
+
+  /* Add 15px padding to the container */
   padding: 15px;
+
+  /* Set the font weight to 600 */
   font-weight: 600;
 }
 
+/* Style for the left section of the profile container */
 .left {
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Arrange child elements in a column */
   flex-direction: column;
+
+  /* Set the width of the section to 80% */
   width: 80%;
+
+  /* Set the font weight to 200 */
   font-weight: 200;
+
+  /* Set the font size to 13px */
   font-size: 13px;
 }
 
+/* Style for the greetings text */
 .greetings {
+  /* Set the font size to 1rem */
   font-size: 1rem;
+
+  /* Set the font weight to 600 */
   font-weight: 600;
 }
 
+/* Style for the right section of the profile container */
 .right {
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Set the flex value to 1 */
   flex: 1;
+
+  /* Add a gap of 20px between child elements */
   gap: 20px;
 }
 
+/* Style for the notification icon */
 .notifIcon {
+  /* Set the font size to 23px */
   font-size: 23px;
+
+  /* Set the color to a light gray */
   color: rgb(185, 185, 185);
+
+  /* Change the cursor style to a pointer */
   cursor: pointer;
 }
 
+/* Style for the settings icon */
 .settingsIcon {
+  /* Set the font size to 23px */
   font-size: 23px;
+
+  /* Set the color to a light gray */
   color: rgb(185, 185, 185);
+
+  /* Change the cursor style to a pointer */
   cursor: pointer;
 }

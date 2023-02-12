@@ -1,30 +1,64 @@
+/* Style for the table */
 table {
+  /* Remove the space between table cells */
   border-collapse: collapse;
+
+  /* Set the width of the table to 50% */
   width: 50%;
+
+  /* Add a margin of 10px at the top */
   margin-top: 10px;
+
+  /* Add rounded corners to the table */
   border-radius: 10px;
+
+  /* Set the background color to white */
   background-color: #fff;
+
+  /* Add a box shadow to the table */
   box-shadow: 4px 1px 5px 0px rgba(0, 0, 0, 0.16);
+
+  /* Add box shadow to the table for different browsers */
   -webkit-box-shadow: 4px 1px 5px 0px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 4px 1px 5px 0px rgba(0, 0, 0, 0.16);
 }
 
+/* Style for the table cells */
 td {
+  /* Add a border at the bottom of the cells */
   border-bottom: 1px solid #dddddd;
+
+  /* Align the text in the cells to the left */
   text-align: left;
+
+  /* Add 8px padding to the cells */
   padding: 8px;
 }
 
+/* Style for the table header */
 thead {
+  /* Set the background color to a light gray */
   background-color: #f2f2f2;
+
+  /* Set the font weight to 600 */
   font-weight: 600;
 }
 
+/* Style for the recent transactions container */
 .recentTransactions {
+  /* Use flexbox to arrange child elements */
   display: flex;
+
+  /* Arrange child elements in a column */
   flex-direction: column;
+
+  /* Center the child elements horizontally */
   align-items: center;
+
+  /* Set the width and height of the container to 100% */
   width: 100%;
   height: 100%;
+
+  /* Set the background color to a light gray */
   background-color: #fbfbfb;
 }
